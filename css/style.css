@@ -32,7 +32,6 @@ body,html {
     --crete: 'Crete Round', serif;
     --roboto: 'Roboto', sans-serif;
 }
-
 h1 {
     font-size: 1.5625rem;
     color:var(--c1);
