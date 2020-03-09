@@ -35,14 +35,17 @@ body,html {
 
 h1 {
     font-size: 1.5625rem;
+    color:var(--c1);
     font-family: var(--roboto);
 }
 h2 {
     font-size: 1.125rem;
+    color:var(--c1);
     font-family: var(--roboto);
 }
 h3 {
     font-size: 1.125rem;
+    color:var(--c5);
     font-family: var(--roboto);
 }
 
