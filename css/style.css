@@ -33,6 +33,20 @@ body,html {
     --roboto: 'Roboto', sans-serif;
 }
 
+h1 {
+    font-size: 1.5625rem;
+    font-family: var(--roboto);
+}
+h2 {
+    font-size: 1.125rem;
+    font-family: var(--roboto);
+}
+h3 {
+    font-size: 1.125rem;
+    font-family: var(--roboto);
+}
+
+
 /* STYLE DU HEADER */
 #header {
     background-color:#333;
