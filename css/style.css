@@ -1,0 +1,47 @@
+/* STYLE GENERIQUE / STRUCTURE / VARIABLE / IMPORT */
+
+html {
+    min-height: 100vh;
+}
+body,html {
+    height: 100%;
+    margin:0;
+    position: relative;
+    font-family: var(--crete);
+}
+#page {
+    background-color: red;
+    width: 100%;
+    min-height:100vh;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Pour utiliser ces variables, faire :
+--> "color: var(--c1)" */
+
+:root {
+    --c1: #007266;
+    --c2: #f7d075;
+    --c3: #C4E0D8;
+    --c4: #304A48;
+    --crete: 'Crete Round', serif;
+    --roboto: 'Roboto', sans-serif;
+}
+
+/* STYLE DU HEADER */
+#header {
+    background-color:#333;
+}
+
+/* STYLE DU MAIN CONTENT */
+#mainContent {
+    background-color:lightblue;
+    flex-grow: 1;
+}
+/* STYLE DU FOOTER */
+#footer {
+    background-color:#AAA;
+}
