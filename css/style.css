@@ -51,9 +51,64 @@ h3 {
 
 /* STYLE DU HEADER */
 #header {
-    background-color:#333;
+    background-color: var(--c3);
+    position: relative;
+    height: 70px;
 }
-
+#header nav,.navList {
+    height: 100%;
+}
+.navList {
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.navList img {
+    width: 100%;
+    height: 100%;
+    max-height: 60px;
+}
+.navLogo {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.navLogo img {
+    max-width: 150px;
+}
+.navLogo li a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.navList .navLink {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
+.navLink li {
+    width: 50%;
+    max-width: 70px;
+}
+.navLink .panier {
+    background-color: var(--c1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navLink .burger {
+    background-color: var(--c2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navLink .panier img,
+.navLink .burger img {
+    width: 30px;
+    height: 30px;
+}
 /* STYLE DU MAIN CONTENT */
 #mainContent {
     background-color:lightblue;
@@ -62,4 +117,5 @@ h3 {
 /* STYLE DU FOOTER */
 #footer {
     background-color:#AAA;
+    text-align: center;
 }
