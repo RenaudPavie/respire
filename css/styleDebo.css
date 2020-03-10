@@ -300,3 +300,42 @@
 .billing-wrapper .button:hover {
     background: var(--c1);
 }
+
+/* FOOTER */
+#footer ul {
+    padding: 0;
+}
+
+#footer li {
+    list-style: none;
+}
+
+#footer {
+    background-color: var(--c3);
+}
+
+#footer .footer a {
+    color: var(--c1);
+    text-decoration: none;
+    font-family: var(--roboto);
+}
+
+#footer .utilitary {
+    background-color: var(--c1);
+    padding: 1rem;
+    margin: 0;
+}
+
+#footer .utilitary li {
+    display: inline;
+}
+
+#footer .utilitary li:not(:first-child) {
+    margin-left: 5px;
+}
+
+#footer .utilitary li a {
+    text-decoration: none;
+    color: var(--c6);
+    font-family: var(--roboto);
+}
