@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Crete+Round&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="../css/styleRenaud.css">
     <link rel="stylesheet" href="../css/styleAlex.css">
     <link rel="stylesheet" href="../css/styleDebo.css">
@@ -88,7 +89,18 @@
             <div class="uCouldLike">
                 <h2>Vous pourriez <br> <span>aimer...</span></h2>
                 <div class="itemCouldLike">
-
+                    <div>
+                        <p>test</p>
+                    </div>
+                    <div>
+                        <p>test</p>
+                        <p>test</p>
+                    </div>
+                    <div>
+                        <p>test</p>
+                        <p>test</p>
+                        <p>test</p>
+                    </div>
                 </div>
             </div>
             <div class="btnPanier">
@@ -102,51 +114,80 @@
                     <p>06 06 06 06 06</p>
                 </div>
             </div>
-
-            <a class="vert button panier" href="checkout.html">VALIDER</a>
         </div>
-        <div id="footer">
-            <nav>
-                <ul class="footer">
-                    <li class="ph-10">
-                        <a href="#">Nos produits</a>
-                    </li>
-
-                    <li class="ph-10">
-                        <a href="#">L'aventure depuis M6</a>
-                    </li>
-
-                    <li class="ph-10">
-                        <a href="#">Respire Tour</a>
-                    </li>
-
-                    <li class="ph-10">
-                        <a href="#">FAQ</a>
-                    </li>
-
-                    <li class="ph-10">
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div>
-                <ul class="utilitary">
-                    <li class="ph-10">
-                        <a href="#">CGV</a>
-                    </li>
-
-                    <li class=" ph-10">
-                        <a href="#">Politique de confidentialité</a>
-                    </li>
-
-                    <li class="ph-10">
-                        <a href="#">Compte</a>
-                    </li>
-                </ul>
+        <div class="facture">
+            <div class="factureItem">
+                <p class="intitule">Produit</p>
+                <p class="prix">26.50€</p class="prix">
+            </div class="factureItem">
+            <div class="factureItem">
+                <p class="intitule">Livraison</p>
+                <p class="prix">3.00€</p>
+            </div>
+            <div class="factureItem">
+                <p class="intitule">Total</p>
+                <p class="prix">29.50€</p>
             </div>
         </div>
+        <a class="vert button panier" href="checkout.html">VALIDER</a>
     </div>
+    <div id="footer">
+        <nav>
+            <ul class="footer">
+                <li class="ph-10">
+                    <a href="#">Nos produits</a>
+                </li>
+
+                <li class="ph-10">
+                    <a href="#">L'aventure depuis M6</a>
+                </li>
+
+                <li class="ph-10">
+                    <a href="#">Respire Tour</a>
+                </li>
+
+                <li class="ph-10">
+                    <a href="#">FAQ</a>
+                </li>
+
+                <li class="ph-10">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div>
+            <ul class="utilitary">
+                <li class="ph-10">
+                    <a href="#">CGV</a>
+                </li>
+
+                <li class=" ph-10">
+                    <a href="#">Politique de confidentialité</a>
+                </li>
+
+                <li class="ph-10">
+                    <a href="#">Compte</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.itemCouldLike').slick({
+                autoplay: true,
+                infinite: true,
+                speed: 2000,
+                arrows: false,
+                fade: true,
+                nav: false
+            });
+        });
+    </script>
 </body>
 
 </html>
