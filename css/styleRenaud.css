@@ -153,6 +153,12 @@ h3 {
     margin-top: 0;
     margin-bottom: 0;
 }
+.totalPrice {
+    position: absolute;
+    bottom: -50px;
+    left: 15px;
+    z-index: 10;
+}
 .itemInPanier {
     background-color:lightblue;
     margin: 0 15px;
