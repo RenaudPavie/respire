@@ -112,11 +112,9 @@ h3 {
 /* STYLE DU MAIN CONTENT */
 #mainContent {
     flex-grow: 1;
-    max-width: 540px;
-    width: 100%;
+    max-width: 100%;
+    margin:0 15px;
     font-family: var(--roboto);
-    /* margin: auto; */
-    margin: 80px auto;
     position: relative;
 }
 .items {
@@ -137,7 +135,31 @@ h3 {
     padding:10px;
     margin-top: -30px;
 }
-
+.itemInPanier {
+    background-color:lightblue;
+    margin: 0 15px;
+    height: 125px;
+    margin-bottom: 15px;
+    display: flex;
+}
+.imgItem {
+    background-color: #fff;
+    height: 125px;
+    width: 125px;
+}
+.imgItem img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.itemInfo {
+    font-size: 0.9rem;
+    width: 70%;
+}
+.itemInfo p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
 /* STYLE DU FOOTER */
 #footer {
     background-color:#AAA;
