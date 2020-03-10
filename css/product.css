@@ -12,7 +12,6 @@ body, html {
 }
 
 #page {
-  background-color: red;
   width: 100%;
   min-height: 100vh;
   height: 100%;
@@ -125,7 +124,6 @@ h3 {
 
 /* STYLE DU MAIN CONTENT */
 #mainContent {
-  background-color: lightblue;
   flex-grow: 1;
 }
 
@@ -135,116 +133,96 @@ h3 {
   text-align: center;
 }
 
-.boite-carte {
-  width: 85%;
-  margin: 30px auto;
+.containers-product {
   background-color: white;
-  position: relative;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0px 0px 13px -5px rgba(0, 0, 0, 0.75);
+  width: 90%;
+  margin: 30px auto;
 }
-.boite-carte::after {
-  content: "";
+.containers-product h2 {
+  margin-top: 30px;
+}
+
+.produit {
+  background-color: white;
+  height: 300px;
   width: 100%;
-  height: 100px;
-  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  position: relative;
+}
+.produit::before {
+  content: "";
+  clip-path: polygon(100% 0, 100% 100%, 78% 100%, 0 29%, 0 0);
+  width: 100%;
+  height: 100%;
+  background-color: #C4E0D8;
   position: absolute;
-  bottom: 0;
+}
+.produit::after {
+  content: "";
+  clip-path: polygon(0% 67%, 100% 39%, 100% 100%, 0% 100%);
+  width: 100%;
+  height: 100%;
+  background-color: #326A9F;
+  position: absolute;
   left: 0;
-  transform: translate(0px, 100%);
-  background-color: #f7d075;
-  box-shadow: 0px 0px 13px -5px rgba(0, 0, 0, 0.75);
+  z-index: 200;
 }
-.boite-carte img {
-  width: 215px;
-}
-.boite-carte .box-price {
+.produit img {
+  width: 300px;
+  height: 300px;
+  position: absolute;
   z-index: 300;
-  position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
-  font-size: 3rem;
-  transform: translate(10px, 100%);
-  color: #007266;
+  transform: translate(29px, -10%);
 }
-.boite-carte .box-price span {
+
+.titlenprice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button-buy {
+  position: relative;
+  background-color: #304A48;
   font-size: 2rem;
-}
-
-.bloc-kit {
-  padding: 15px 30px;
-  background-color: #007266;
-  color: #C4E0D8;
-}
-.bloc-kit h2 {
-  color: #C4E0D8;
-  text-align: center;
-  font-size: 1.5rem;
-  margin: 0;
-}
-
-.button-achat {
+  text-decoration: none;
+  color: white;
   display: flex;
   justify-content: center;
-  text-align: center;
-  font-size: 1.2rem;
-  border: 4px solid #C4E0D8;
-  text-decoration: none;
-  line-height: 2;
-  color: #C4E0D8;
-  margin-top: 20px;
+  padding: 3px 0;
 }
-
-.boite-carte1 {
-  width: 85%;
-  margin: 140px auto;
-  background-color: white;
-  position: relative;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0px 0px 13px -5px rgba(0, 0, 0, 0.75);
-}
-.boite-carte1::after {
+.button-buy::after {
   content: "";
-  width: 100%;
-  height: 100px;
-  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(0px, -100%);
+  clip-path: polygon(100% 100%, 0 0, 100% 0);
   background-color: #f7d075;
-}
-.boite-carte1 img {
-  width: 215px;
-}
-
-.box-price2 {
-  z-index: 300;
+  width: 33%;
   position: absolute;
+  z-index: 3000;
+  height: 100%;
   top: 0;
   right: 0;
-  font-size: 2.3rem;
-  transform: translate(-10px, -100%);
-  color: #007266;
 }
 
-.added-box {
-  height: 70px;
+.box-frequently {
   width: 100%;
-  background-color: #f7d075;
-  position: absolute;
-  bottom: 0;
-  transform: translate(0px, 100%);
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #C4E0D8;
 }
-.added-box p {
-  font-size: 2rem;
-  text-align: center;
-  color: #007266;
-  margin: 15px;
+.box-frequently img {
+  width: 150px;
+  height: 150px;
 }
 
-/*# sourceMappingURL=style.css.map */
+.cross {
+  clip-path: polygon(0 39%, 40% 39%, 40% 0, 58% 0, 59% 39%, 100% 40%, 100% 64%, 59% 64%, 59% 100%, 40% 100%, 40% 63%, 0 62%);
+  background-color: #f7d075;
+  width: 30px;
+  height: 30px;
+}
+
+/*# sourceMappingURL=product.css.map */
