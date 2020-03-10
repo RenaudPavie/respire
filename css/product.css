@@ -65,16 +65,16 @@
 
 .button-buy {
   position: relative;
-  background-color: #304A48;
-  font-size: 2rem;
+  border: 1px #304A48 solid;
+  font-size: 20px;
   text-decoration: none;
-  color: white;
+  color: #304A48;
   display: flex;
   justify-content: center;
   padding: 3px 0;
 }
 
-.button-buy::after {
+/* .button-buy::after {
   content: "";
   clip-path: polygon(100% 100%, 0 0, 100% 0);
   background-color: #f7d075;
@@ -84,7 +84,7 @@
   height: 100%;
   top: 0;
   right: 0;
-}
+} */
 
 .box-frequently {
   width: 100%;
