@@ -56,7 +56,8 @@
 }
 
 /* CHECKOUT */
-#mainContent.checkout {
+#mainContent.checkout,
+#mainContent.panier {
     margin-top: 80px;
 }
 
