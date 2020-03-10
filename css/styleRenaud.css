@@ -158,6 +158,11 @@ h3 {
     bottom: -50px;
     left: 15px;
     z-index: 10;
+    color: var(--c1);
+    font-size: 1.2rem;
+}
+.totalPrice span {
+    font-weight: 700;
 }
 .itemInPanier {
     background-color:lightblue;
@@ -253,13 +258,40 @@ h3 {
 }
 
 .btnPanier {
+    margin-top: 15px;
     display: flex;
+    justify-content: space-between;
+}
+.btnPanier .contact,.btnPanier .promo {
+    width: calc(50% - 7.5px);
+}
+.btnPanier .contact {
+    background-color: var(--c4);
+    color: var(--c2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .btnPanier .contact p {
     margin: 0;
 }
-
-    /* margin-top: 115px; */
+.btnPanier .contact p:first-child {
+    color: var(--c6);
+}
+.button.panier {
+    text-decoration: none;
+    padding: 10px;
+    border: 1px var(--c1) solid;
+    z-index: 2;
+    position: absolute;
+    left: calc(100% / 3);
+    bottom: -4rem;
+}
+.button.panier:hover {
+    background: var(--c1);
+    color:var(--c6);
+}
 /* STYLE DU FOOTER */
 #footer {
     background-color:lightgoldenrodyellow;
